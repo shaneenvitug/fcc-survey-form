@@ -1,0 +1,23 @@
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyC1SpE2-piRfHSKTwjYPA0_7gE-7nEFuC4",
+    authDomain: "survey-form-fcc.firebaseapp.com",
+    databaseURL: "https://survey-form-fcc.firebaseio.com",
+    projectId: "survey-form-fcc",
+    storageBucket: "survey-form-fcc.appspot.com",
+    messagingSenderId: "400485441927",
+    appId: "1:400485441927:web:a9c7b189840ad6b82c3322",
+    measurementId: "G-8M8HNYWBRH"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>

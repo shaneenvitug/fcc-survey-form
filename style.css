@@ -50,7 +50,7 @@ fieldset {
 }
 
 button {
-  margin-top: 3em;
+  margin-top: 2em;
   background: linear-gradient(90deg, rgba(255, 80, 101, 1) 45%, rgba(249, 125, 26, 1) 100%);
   border: none;
   color: white;
@@ -69,6 +69,17 @@ button {
 button:hover {
   cursor: pointer;
   background: linear-gradient(90deg, rgba(255, 80, 101, 0.7497373949579832) 45%, rgba(249, 125, 26, 0.6068802521008403) 100%);
+}
+
+.alert {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.alert-message {
+  margin-top: 3em;
+  font-family: 'Nunito', sans-serif;
+  display: none;
 }
 
 footer {
@@ -140,6 +151,17 @@ footer img {
   button {
     margin-bottom: 2em;
     text-align: center;
-    padding: 0.5em 8em;
+    padding: 0.5em 7em;
+  }
+
+  .alert {
+    display: grid;
+    margin: 0 auto;
+  }
+
+  .alert-message {
+    margin-top: 1em;
+    font-size: x-small;
+    text-align: center;
   }
 }
