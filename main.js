@@ -73,5 +73,13 @@ function sendMessage(name, email, age, gender, countryValue, goals, microGoals, 
     seriousGoals: seriousGoals
   });
 }
-
-
+//limit checkbox selection to 3 for top 3 goals
+var checks = document.querySelectorAll(".top3");
+var max = 3;
+for (let i = 0; i < checks.length; i++)
+  checks[i].onclick = selectiveCheck;
+function selectiveCheck (event) {
+  var checkedChecks = document.querySelectorAll(".top3:checked");
+  if (checkedChecks.length >= max + 1)
+    return false;
+}
